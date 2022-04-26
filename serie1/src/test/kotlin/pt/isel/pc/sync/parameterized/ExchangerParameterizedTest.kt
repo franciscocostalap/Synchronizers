@@ -67,6 +67,7 @@ class ExchangerParameterizedTest(private val nExchanges: Int, private val synchr
             val thread1 = thread {
                 val input = listOfValues[i]
                 val message = exchanger.exchange(input, 2.seconds)
+                logger.info { "Thread 1 received $message" }
                 mutex.withLock {
                     resultMap[input] = message
                 }
@@ -74,6 +75,7 @@ class ExchangerParameterizedTest(private val nExchanges: Int, private val synchr
             val thread2 = thread {
                 val input = listOfValues[i + nExchanges]
                 val message = exchanger.exchange(input,2.seconds)
+                logger.info { "Thread 2 received $message" }
                 mutex.withLock {
                     resultMap[input] = message
                 }
