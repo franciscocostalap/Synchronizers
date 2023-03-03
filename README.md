@@ -2,27 +2,27 @@
 
 In this repository you will find some implementations of synchronizers and thread safe utility components, namely:
   ### Lock based (serie1)
-  - **Exchanger**: Exchanges values between two threads.
+  - [**Exchanger**](https://github.com/franciscocostalap/Synchronizers/blob/main/serie1/src/main/kotlin/pt/isel/pc/sync/Exchanger.kt): Exchanges values between two threads.
 
   - **Blocking Message Queue**: A blocking queue that can be used to exchange messages between threads.
-    - **Classic Aproach**: Both enqueue and dequeue methods are blocking.
-    - **Future Implementation**: Dequeue method returns a future, thus is non blocking.
+    - [**Classic Aproach**](https://github.com/franciscocostalap/Synchronizers/blob/main/serie1/src/main/kotlin/pt/isel/pc/sync/BlockingMessageQueue.kt): Both enqueue and dequeue methods are blocking.
+    - [**Future Implementation**](https://github.com/franciscocostalap/Synchronizers/blob/main/serie1/src/main/kotlin/pt/isel/pc/sync/BlockingMessageQueueFuture.kt): Dequeue method returns a [future](https://github.com/franciscocostalap/Synchronizers/blob/main/serie1/src/main/kotlin/pt/isel/pc/sync/FutureImpl.kt), thus is non blocking.
 
-  - **Thread Pool Executor**: 
+  - [**Thread Pool Executor**](https://github.com/franciscocostalap/Synchronizers/blob/main/serie1/src/main/kotlin/pt/isel/pc/sync/ThreadPoolExecutor.kt): 
   A thread pool that can be used to execute tasks concurrently, without the need to manage thread creation and destruction.
     
 
 ### Lock free (serie2)
-  - **Counter Modulo**: 
+  - [**Counter Modulo**](https://github.com/franciscocostalap/Synchronizers/blob/main/serie2/src/main/kotlin/pt/isel/pc/sync/CounterModulo.kt): 
   A counter that can be incremented and decremented, but only up to a given value.
 
-  - **Lazy**: 
+  - [**Lazy**](https://github.com/franciscocostalap/Synchronizers/blob/main/serie2/src/main/kotlin/pt/isel/pc/sync/LazyLockFree.kt): 
   A lazy value that is initialized only once, and then cached.
 
-  - **Message Box**: 
+  - [**Message Box**](https://github.com/franciscocostalap/Synchronizers/blob/main/serie2/src/main/kotlin/pt/isel/pc/sync/MessageBox.kt): 
   Stores a message that can be read an determined number of times.
 
-  - **Queue**: 
+  - [**Queue**](https://github.com/franciscocostalap/Synchronizers/blob/main/serie2/src/main/kotlin/pt/isel/pc/sync/QueueLockFree.kt): 
   A thread safe classic queue. Implemented using the [Lock free algorithm of Michael and Scott.](https://www.cs.rochester.edu/~scott/papers/1996_PODC_queues.pdf)
 
 
