@@ -1,12 +1,10 @@
 # Concurrent Programming
 
 In this repository you will find some implementations of synchronizers and thread safe utility components, namely:
-  #### Lock based (serie1)
-  - **Exchanger**: 
-  Exchanges values between two threads.
+  ### Lock based (serie1)
+  - **Exchanger**: Exchanges values between two threads.
 
-  - **Blocking Message Queue**: 
-  A blocking queue that can be used to exchange messages between threads.
+  - **Blocking Message Queue**: A blocking queue that can be used to exchange messages between threads.
     - **Classic Aproach**: Both enqueue and dequeue methods are blocking.
     - **Future Implementation**: Dequeue method returns a future, thus is non blocking.
 
