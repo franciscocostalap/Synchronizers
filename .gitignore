@@ -1,7 +1,9 @@
 #gradle
 build
 .gradle
+gradle
 
 #intellij
 out
 .idea
+bin
