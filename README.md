@@ -27,7 +27,7 @@ In this repository you will find some implementations of synchronizers and threa
 
 
 ## Tests:
-  Every synchronizer and component were properly tested using both unit and parameterized tests.
+  Every synchronizer and component was properly tested using both unit and parameterized tests.
   The unit tests also serve as examples of how to use them properly.
 ### Lock based:
   - [Unit](https://github.com/isel-leic-pc/s2122-2-leic42d-problem-sets-student-franciscocostalap/tree/master/serie1/src/test/kotlin/pt/isel/pc/sync/unit)
